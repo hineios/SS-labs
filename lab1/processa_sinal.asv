@@ -1,0 +1,10 @@
+function y = processa_sinal(x, a, b)
+%PROCESSA_SINAL Summary of this function goes here
+%   Detailed explanation goes here
+    t = size(x)
+    y = zeros(t);
+    for i = 0; i < length(t(1)); i = i+1
+        y(i,0) = (x(i,0)*a)+b;
+    end
+end
+

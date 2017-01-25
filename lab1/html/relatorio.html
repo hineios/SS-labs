@@ -1,0 +1,259 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Laborat&oacute;rio n&ordm; 1 de Sistemas e sinais</title><meta name="generator" content="MATLAB 7.13"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2012-03-06"><meta name="DC.source" content="relatorio.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Laborat&oacute;rio n&ordm; 1 de Sistemas e sinais</h1><!--introduction--><p>Alunos: Ricardo Leit&atilde;o n&ordm;69632 , F&aacute;bio Almeida n&ordm;70227</p><p>Turma/Turno: 3b</p><p>Grupo: 05</p><p>Data: 06/03/2012</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Exerc&iacute;cio 1.i) sen</a></li><li><a href="#2">Exerc&iacute;cio 1.i) cos</a></li><li><a href="#3">Exerc&iacute;cio 1.ii)</a></li><li><a href="#4">Exerc&iacute;cio 1.iii) sen</a></li><li><a href="#5">Exerc&iacute;cio 1.iii) cos</a></li><li><a href="#6">Exerc&iacute;cio 1.iv)</a></li><li><a href="#7">Exerc&iacute;cio 1.v)</a></li><li><a href="#8">Exerc&iacute;cio 1.vi)</a></li><li><a href="#9">Exerc&iacute;cio 1.vii)</a></li><li><a href="#10">Exerc&iacute;cio 2.i)</a></li><li><a href="#11">Exerc&iacute;cio 2.ii)</a></li><li><a href="#12">Exerc&iacute;cio 2.iii)</a></li><li><a href="#13">Exerc&iacute;cio 2.iv)</a></li><li><a href="#14">Exerc&iacute;cio 3.a)</a></li><li><a href="#15">Exerc&iacute;cio 3.b)</a></li><li><a href="#16">Exerc&iacute;cio 3.c)</a></li><li><a href="#17">Exerc&iacute;cio 3.d)</a></li><li><a href="#18">Exerc&iacute;cio 3.e)</a></li><li><a href="#19">Exerc&iacute;cio 3.f)</a></li></ul></div><h2>Exerc&iacute;cio 1.i) sen<a name="1"></a></h2><p>sin(0.5*pi*t): A frequ&ecirc;ncia angular &eacute; 0.5pi. A frequ&ecirc;ncia em Hertz &eacute;:</p><pre class="codeinput">f = 0.5*pi/(2*pi)
+</pre><pre class="codeoutput">
+f =
+
+    0.2500
+
+</pre><h2>Exerc&iacute;cio 1.i) cos<a name="2"></a></h2><p>cos(0.25*pi*t) A frequ&ecirc;ncia angular &eacute; 0.25pi. A frequ&ecirc;ncia em Hertz &eacute;:</p><pre class="codeinput">f = 0.25*pi/(2*pi)
+</pre><pre class="codeoutput">
+f =
+
+    0.1250
+
+</pre><h2>Exerc&iacute;cio 1.ii)<a name="3"></a></h2><p>O contradom&iacute;nio da fun&ccedil;&atilde;o &eacute; [-1.26,2.26]. O per&iacute;odo &eacute; 8.</p><pre class="codeinput">t = -10:.01:10;
+z = sin(0.5*pi*t)+cos(0.25*pi*t)+0.5;
+figure(1), plot(t,z), grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="relatorio_01.png" alt=""> <h2>Exerc&iacute;cio 1.iii) sen<a name="4"></a></h2><p>sin(0.5*pi*n): A frequ&ecirc;ncia angular &eacute; 0.5pi. A frequ&ecirc;ncia em Hertz &eacute;:</p><pre class="codeinput">f = 0.5*pi/(2*pi)
+</pre><pre class="codeoutput">
+f =
+
+    0.2500
+
+</pre><h2>Exerc&iacute;cio 1.iii) cos<a name="5"></a></h2><p>cos(0.25*pi*n) A frequ&ecirc;ncia angular &eacute; 0.25pi. A frequ&ecirc;ncia em Hertz &eacute;:</p><pre class="codeinput">f = 0.25*pi/(2*pi)
+</pre><pre class="codeoutput">
+f =
+
+    0.1250
+
+</pre><h2>Exerc&iacute;cio 1.iv)<a name="6"></a></h2><pre class="codeinput">n = -10:.1:10;
+z = sin(0.5*pi*n)+cos(0.25*pi*n)+0.5;
+figure(2), stem(n ,z), grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="relatorio_02.png" alt=""> <h2>Exerc&iacute;cio 1.v)<a name="7"></a></h2><pre class="codeinput">n = -10:1:10;
+z = sin(0.5*pi*n)+cos(0.25*pi*n)+0.5;
+zi = impar(z,n);
+n = -10:1:10;
+figure, stem(n,zi), grid <span class="string">on</span>;
+</pre><img vspace="5" hspace="5" src="relatorio_03.png" alt=""> <h2>Exerc&iacute;cio 1.vi)<a name="8"></a></h2><pre class="codeinput">n = -10:1:10;
+z = sin(0.5*pi*n)+cos(0.25*pi*n)+0.5;
+zp = par(z,n);
+n = -10:1:10;
+figure, stem(n, zp), grid <span class="string">on</span>;
+</pre><img vspace="5" hspace="5" src="relatorio_04.png" alt=""> <h2>Exerc&iacute;cio 1.vii)<a name="9"></a></h2><pre class="codeinput">paridade;
+</pre><img vspace="5" hspace="5" src="relatorio_05.png" alt=""> <h2>Exerc&iacute;cio 2.i)<a name="10"></a></h2><pre class="codeinput">[Som, Fs, nbits] = wavread(<span class="string">'som.wav'</span>);
+som_a = processa_var_ind(Som, -2, 1);
+sound(som_a);
+</pre><h2>Exerc&iacute;cio 2.ii)<a name="11"></a></h2><p>A fun&ccedil;&atilde;o processa_var_ind vai alterar a variavel independente do sinal, o que na pr&aacute;tica corresponde a alterar a interpreta&ccedil;&atilde;o do sinal ao longo do tempo. Ou seja, o terceiro parametro da fun&ccedil;&atilde;o vai coresponder a uma transla&ccedil;&atilde;o do sinal no tempo e o segundo parametro da fun&ccedil;&atilde;o vai ter comportamentos diferentes: se negativo inverte o sinal, se o valor absoluto estiver entre 0 e 1 existe uma expans&atilde;o do sinal e se o valor absoluto for maior que 1 existe uma compress&atilde;o do sinal.</p><h2>Exerc&iacute;cio 2.iii)<a name="12"></a></h2><pre class="codeinput">Som = wavread(<span class="string">'som.wav'</span>);
+som_b = processa_sinal(Som, 2, 0);
+sound(som_b);
+som_c = processa_sinal(Som, 0.5, 0);
+sound(som_c);
+</pre><pre class="codeoutput">
+t =
+
+       84277           1
+
+
+t =
+
+       84277           1
+
+</pre><h2>Exerc&iacute;cio 2.iv)<a name="13"></a></h2><p>A fun&ccedil;&atilde;o processa_sinal vai alterar a amplitude do sinal, o que na pr&aacute;tica corresponde &agrave; intensidade do som, o que implica que no caso do sinal som_a corresponda ao aumento da intensidade do som e que no caso do sinal som_b corresponda &agrave; diminui&ccedil;&atilde;o da intensidade do som.</p><h2>Exerc&iacute;cio 3.a)<a name="14"></a></h2><p>A frequ&ecirc;ncia angular &eacute; 0.8pi. A frequ&ecirc;ncia em hertz &eacute; dada por:</p><pre class="codeinput">f = 0.8*pi/(2*pi)
+<span class="comment">% O per&iacute;odo &eacute; dado por:</span>
+T = 1/f
+</pre><pre class="codeoutput">
+f =
+
+    0.4000
+
+
+T =
+
+    2.5000
+
+</pre><h2>Exerc&iacute;cio 3.b)<a name="15"></a></h2><pre class="codeinput">t = 0:.001:5;
+y = 2.5*sin(0.8*pi*t)+2.5;
+figure, plot(t, y), grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="relatorio_06.png" alt=""> <h2>Exerc&iacute;cio 3.c)<a name="16"></a></h2><pre class="codeinput">n = 0:.01:5;
+Ts = .01;
+y = 2.5*sin(0.8*pi*n)+2.5;
+</pre><h2>Exerc&iacute;cio 3.d)<a name="17"></a></h2><pre class="codeinput">figure, stem(n, y), grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="relatorio_07.png" alt=""> <h2>Exerc&iacute;cio 3.e)<a name="18"></a></h2><pre class="codeinput">tensao = [n ;y]';
+</pre><h2>Exerc&iacute;cio 3.f)<a name="19"></a></h2><pre class="codeinput">n = 0:.01:5;
+u = (2.5+2.5*cos(0.8*pi*n)).*exp((-0.5)*n);
+figure, stem(n, u), grid <span class="string">on</span>
+tensao = [n; u]';
+</pre><img vspace="5" hspace="5" src="relatorio_08.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.13<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Laboratório nº 1 de Sistemas e sinais
+% Alunos: Ricardo Leitão nº69632 , Fábio Almeida nº70227
+%
+%
+% Turma/Turno: 3b
+%
+% Grupo: 05
+%
+% Data: 06/03/2012
+
+%% Exercício 1.i) sen
+% sin(0.5*pi*t):
+% A frequência angular é 0.5pi.
+% A frequência em Hertz é:
+f = 0.5*pi/(2*pi)
+
+%% Exercício 1.i) cos
+% cos(0.25*pi*t)
+% A frequência angular é 0.25pi.
+% A frequência em Hertz é:
+f = 0.25*pi/(2*pi)
+%% Exercício 1.ii)
+% O contradomínio da função é [-1.26,2.26].
+% O período é 8.
+t = -10:.01:10;
+z = sin(0.5*pi*t)+cos(0.25*pi*t)+0.5;
+figure(1), plot(t,z), grid on
+
+%% Exercício 1.iii) sen
+% sin(0.5*pi*n):
+% A frequência angular é 0.5pi.
+% A frequência em Hertz é:
+f = 0.5*pi/(2*pi)
+%% Exercício 1.iii) cos
+% cos(0.25*pi*n)
+% A frequência angular é 0.25pi.
+% A frequência em Hertz é:
+f = 0.25*pi/(2*pi)
+%% Exercício 1.iv)
+n = -10:.1:10;
+z = sin(0.5*pi*n)+cos(0.25*pi*n)+0.5;
+figure(2), stem(n ,z), grid on
+%% Exercício 1.v)
+n = -10:1:10;
+z = sin(0.5*pi*n)+cos(0.25*pi*n)+0.5;
+zi = impar(z,n);
+n = -10:1:10;
+figure, stem(n,zi), grid on;
+%% Exercício 1.vi)
+n = -10:1:10;
+z = sin(0.5*pi*n)+cos(0.25*pi*n)+0.5;
+zp = par(z,n);
+n = -10:1:10;
+figure, stem(n, zp), grid on;
+%% Exercício 1.vii)
+paridade;
+
+%% Exercício 2.i)
+[Som, Fs, nbits] = wavread('som.wav');
+som_a = processa_var_ind(Som, -2, 1);
+sound(som_a);
+%% Exercício 2.ii)
+% A função processa_var_ind vai alterar a variavel independente do sinal, o
+% que na prática corresponde a alterar a interpretação do sinal ao longo do
+% tempo. Ou seja, o terceiro parametro da função vai coresponder a uma
+% translação do sinal no tempo e o segundo parametro da função vai ter
+% comportamentos diferentes: se negativo inverte o sinal, se o valor absoluto
+% estiver entre 0 e 1 existe uma expansão do sinal e se o valor absoluto
+% for maior que 1 existe uma compressão do sinal.
+%% Exercício 2.iii)
+Som = wavread('som.wav');
+som_b = processa_sinal(Som, 2, 0);
+sound(som_b);
+som_c = processa_sinal(Som, 0.5, 0);
+sound(som_c);
+%% Exercício 2.iv)
+% A função processa_sinal vai alterar a amplitude do sinal, o que na
+% prática corresponde à intensidade do som, o que implica que no caso do
+% sinal som_a corresponda ao aumento da intensidade do som e que no caso
+% do sinal som_b corresponda à diminuição da intensidade do som.
+
+%% Exercício 3.a)
+% A frequência angular é 0.8pi. A frequência em hertz é dada por:
+f = 0.8*pi/(2*pi)
+% O período é dado por:
+T = 1/f
+%% Exercício 3.b)
+t = 0:.001:5;
+y = 2.5*sin(0.8*pi*t)+2.5;
+figure, plot(t, y), grid on
+%% Exercício 3.c)
+n = 0:.01:5;
+Ts = .01;
+y = 2.5*sin(0.8*pi*n)+2.5;
+%% Exercício 3.d)
+figure, stem(n, y), grid on
+%% Exercício 3.e)
+tensao = [n ;y]';
+%% Exercício 3.f)
+n = 0:.01:5;
+u = (2.5+2.5*cos(0.8*pi*n)).*exp((-0.5)*n);
+figure, stem(n, u), grid on
+tensao = [n; u]';
+
+
+
+##### SOURCE END #####
+--></body></html>
